@@ -1,8 +1,8 @@
 import pandas as pd
 
 #Reading info from csv files
-dataFrame1 = pd.read_csv('resources/election_data.csv')
-dataFrame2 = pd.read_csv('resources/budget_data.csv')
+dataFrame1 = pd.read_csv('pythonassignment3-main/resources/election_data.csv')
+dataFrame2 = pd.read_csv('pythonassignment3-main/resources/budget_data.csv')
 
 
 
@@ -55,5 +55,5 @@ winner = totalVotes.idxmax()
 fileWrite = "Financial Analysis\n------------------ \n" + "Total Months: " + str(months) +"\n" + "Total: " + str(totalProfitLoss) + "\n" + "Average Change: " + str(average) + "\n" + "Greatest Increase in Profits: " + str(increase) + "\n" + "Greatest Decrease in Profits" + str(decrease) + "\n" + "\n" + "Election Results\n------------------ \n" + "Total Votes: " + str(numVotes) + "\n" + "Charles Casper Stockham: " + str(charlesP) + "% " + str(charles) + "\n" + "Diana DeGette: " + str(dianaP) + "% " + str(diana) + "\n" + "Raymon Anthony Doane: " + str(raymonP) + "% " + str(raymon) + "\n" + "Winner is: " + winner
 
 #Opening text file
-file = open("Analysis/analysis_data.txt", "w")
+file = open("pythonassignment3-main/Analysis/analysis_data.txt", "w")
 file.write(fileWrite)
